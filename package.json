@@ -1,0 +1,16 @@
+{
+  "name": "horn",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A tiny pixelated arena game for js13k 2026.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "pack": "python3 scripts/pack.py",
+    "preview": "python3 -m http.server 4173 --directory dist",
+    "test": "node scripts/test.cjs && node scripts/manual-fire-test.cjs && node scripts/music-test.cjs && node scripts/pickup-audio-test.cjs && node scripts/packed-audio-test.cjs && node scripts/packed-combat-test.cjs"
+  },
+  "devDependencies": {
+    "terser": "5.51.2",
+    "roadroller": "2.1.0"
+  }
+}
